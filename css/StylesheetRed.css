@@ -1,0 +1,1038 @@
+﻿body {
+    margin: 0px;
+    font-size: 12px;
+    background-color: #f1f1f1;
+    /*overflow-x:hidden;*/
+    font-family: sans-serif;
+}
+
+#container {
+    margin: 0px;
+}
+#header1 {
+    padding: 5px 20px;
+    background-color: #AA0202;
+    height: 42px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #6d0303;
+    
+}
+#projectLogo {
+    font-size: 30px;
+    color: #CECCCC;
+    clear: none;
+    float: left;
+    margin-top: -5px;
+}
+.menuBar {
+    clear: none;
+    float: left;
+    margin-left: 0px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.navigationDiv {
+    width: 170px;
+    text-align: center;
+    color: #eaeaea;
+    font-weight: bold;
+    margin-top: -4px;
+    border-top: 2px solid #AA0202;
+    border-bottom: 2px solid #6d0303;
+    position: absolute;
+}
+#navigation_div {
+    width: 30px;
+    clear: none;
+    float: left;
+    margin-right: 5px;
+    height: 700px;
+}
+.navigation_container_data_Active_div {
+    height: 40px;
+    padding: 5px;
+    /*background-image:url('img/navigation_highlight_1.png'); */
+    /*background-repeat:no-repeat;*/
+    /*border:1px solid black;*/
+    background-color: #AA0202;
+    border-right: 2px solid #6d0303;
+    /* overflow:auto ;*/
+}
+.navigation_container_data_Active_div1 {
+    height: 500px;
+    padding: 5px;
+    /*background-image:url('img/navigation_highlight_1.png'); */
+    /*background-repeat:no-repeat;*/
+    /*border:1px solid black;*/
+    /*height: 40px;
+            background-image:url('img/navigation_non_highlight_1.png'); 
+            background-repeat:no-repeat;*/
+    background-color: #6b0606;
+    border-right: 2px solid #6d0303;
+    /* overflow:auto;*/
+}
+.controllBox {
+    /*border: 1px solid black;*/
+    border-radius: 5px 5px 0px 0px;
+  
+    border: 2px solid #750404;
+    background-color: #ebebeb;
+    margin: 10px;
+    z-index:10;
+
+
+     box-shadow: 2px 2px 19px #aaa;
+        -o-box-shadow: 2px 2px 19px #aaa;
+        -webkit-box-shadow: 2px 2px 19px #aaa;
+        -moz-box-shadow: 2px 2px 19px #aaa;
+
+        /*color:#9fc4d0*/
+        /* For IE 5.5 - 7 */
+        /* for IE4 - IE7 */
+        /*filter:
+            progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=1, Color=#9fc4d0),
+            progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color=#9fc4d0),
+            progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color=#9fc4d0),
+            progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color=#9fc4d0);*/
+        /*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=1, Color=#C4C4C4), progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=90, Color=#C4C4C4),            progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=180, Color=#C4C4C4),            progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=270, Color=#C4C4C4)        ";*/
+
+}
+/*.controllBox:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}*/
+.deviceList {
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    top: 80px;
+}
+.deviceListAdmin {
+    width: 350px;
+    position: absolute;
+    left: 200px;
+    top: 330px;
+}
+.deviceListAdminHeight {
+    height: 364px;
+}
+
+.partList {
+    width: 200px;
+    position: absolute;
+    top: 405px;
+    left: 200px;
+    /*border:groove;*/
+    /*color:#1f7b8f;*/
+    /*color:rgba(129, 188, 211, 0.48)*/
+    /*background-color:rgba(0, 0, 0, 0.36)*/
+}
+.workArea {
+    width: 700px;/*530px;*/
+    position: absolute;
+    left: 410px;
+    top: 80px;
+    z-index:auto;
+}
+.workAreaDIVHeigth {
+    width: 700px; /*530px;*/
+    height: 600px;/*500px;*/
+}
+.vizulizationWindow {
+    width: 450px;
+    position: absolute;
+    left: 1020px;
+    top: 80px;
+}
+.vizulizationDIVHeigth {
+    width: auto;
+    height: 528px;
+}
+.header {
+    background-color: #AA0202;
+    color: #F7F7F7;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px;
+    height: 15px;
+}
+.controllBody {
+    overflow: auto;
+    color: #422f2f;
+    font-weight:bold;
+}
+.deviceListHeight {
+    height: 300px;
+}
+.ControllBoxHeader {
+    float: left;
+}
+.ControllBoxClose {
+    color:#fff;
+    background-color: transparent;
+    float: right;
+    width: 15px;
+    text-align: center;
+    clear: none;
+    margin-top: -4px;
+    padding: 2px 2px 2px 2px;
+    border: none;
+    margin-right: 0px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'Arial Rounded MT Bold';
+    outline:none;
+}
+    .ControllBoxClose:hover {
+        color:#ae5757;
+    }
+.toolBox {
+    width: auto;
+    height: 27px;
+    background-color: #D8AFAF;
+    padding: 0px 10px;
+    border-top: 1px solid #9d5555;
+}
+.buttonTheam {
+
+    /*color:#262626;*/
+    /*cursor:pointer*/
+
+    border: 1px solid #969494;
+    margin: 3px 0px 3px 3px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #7a1515;
+    border: #000000 1px solid;
+    color: #fff;
+    float: left;
+    clear: none;
+    outline:none;
+
+
+}
+    .buttonTheam:hover {
+        background-color: #9c3b3b; /*#F7F7F7;*/
+    }
+.workAreaContantDIV {
+    width: 700px;/*530px;*/ /*1000px;        	*/
+    height: 600px;/*500px;*/ /*1000px;*/
+    background-color: White;
+    float: left;
+    clear: none;
+}
+.userNameDiv {
+    float: right;
+    margin-top: 15px;
+    color: #CECCCC;
+    outline:none;
+}
+.userIMG {
+    height: 20px;
+    width: 20px;
+    float: left;
+    clear: none;
+    margin-right: 10px;
+}
+.home {
+    /*height:20px;*/
+    /*width:20px;*/
+    float: left;
+    clear: none;
+    margin-top: 1px;
+    margin-right: 30px;
+    background-color: #096ddb;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    color: #6d0303;
+}
+    .home:hover {
+        background-color: #1a87ff;
+        color: #fff;
+    }
+
+.userName {
+    margin: 7px 0px 7px 7px;
+    float: left;
+    clear: none;
+    border: none;
+    background-color: transparent;
+    color: #CECCCC;
+    outline:none;
+}
+    .userName:hover {
+        color: #ffffff;
+        cursor: pointer;
+    }
+.userMenu {
+    float: left;
+    margin-top: -15px;
+    margin-left: 0px;
+}
+        
+        /*.userMenuDropDown
+        {
+        	float:right;
+        	
+        	clear:both;*/
+        	/*visibility:hidden;
+        }*/
+        
+        /*Main UL*/
+
+.link {
+    border: 0px solid #000000;
+    text-align: left;
+    background-color: Transparent;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    outline:none;
+}
+
+ul.nav {
+    color: #CFCFCF;
+    padding: 0px 10px 10px 10px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+		/*Refer to all sub ul*/
+    ul.nav li > ul, ul.nav li > ul li > ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        padding: 0px 30px 10px 10px;
+        width: auto;
+        background: #AA0202;
+    }	/*	
+		
+
+		/*Refer to all list item */
+        ul.nav > li, ul.nav li > ul li /*, ul.nav li > ul li > ul li*/ {
+            list-style-type: none;
+            display: inline;
+            position: relative;
+            z-index: 5000;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 10px;
+
+        }
+
+
+		/*Refer to all anchor item
+		ul.nav > li .link, */
+            ul.nav li > ul li .link,
+            ul.nav li > ul li > ul li .link {
+                text-decoration: none;
+                /*Fonts*/
+                color: #fff;
+                display: inline;
+            }
+
+		/*Refer to all anchor item :hover*/
+            ul.nav > li:hover, ul.nav li > ul li:hover, ul.nav li > ul li > ul li:hover {
+                text-decoration: none;
+                z-index: 5000;
+                cursor: pointer;
+                /*margin-left:5px;*/
+            }
+                ul.nav li > ul li:hover .link, ul.nav li > ul li > ul li:hover .link {
+                    color: #f19e9e;
+                }
+		
+
+		/*display sub-menu*/
+    ul.nav li:hover > ul {
+        display: block;
+        left: 0px;
+        top: 30px;
+        border-left: 1px solid #6d0303;
+        border-right: 1px solid #6d0303;
+        border-bottom: 7px solid #6d0303;
+        border-top: 0px solid #AA0202;
+        /*padding:10px;*/
+    }
+    ul.nav > li:hover {
+        color: #ffffff;
+    }
+		
+		
+		/*Main UL*/
+ul.useMenuBar {
+    color: #CFCFCF;
+    padding: 0px 10px 10px 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+    ul.useMenuBar li > ul, ul.useMenuBar li > ul li > ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        padding: 10px 30px 10px 10px;
+        width: auto;
+        background: #AA0202;
+    }
+        ul.useMenuBar li > ul li > ul {
+            top: 0px;
+            background: red;
+            z-index: 5000;
+        }
+            ul.useMenuBar > li, ul.useMenuBar li > ul li, ul.useMenuBar li > ul li > ul li {
+                list-style-type: none;
+                display: inline;
+                position: relative;
+                z-index: 5000;
+                padding: 3px 10px 3px 10px;
+                clear:both;
+                float:left;
+            }
+
+
+                ul.useMenuBar > li a, ul.useMenuBar li > ul li a, ul.useMenuBar li > ul li > ul li a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: inline;
+                }
+
+                ul.useMenuBar > li:hover, ul.useMenuBar li > ul li:hover, ul.useMenuBar li > ul li > ul li:hover {
+                    text-decoration: none;
+                    z-index: 5000;
+                    cursor: pointer;
+                }
+                    ul.useMenuBar li > ul li:hover a, ul.useMenuBar li > ul li > ul li:hover a {
+                        color: #f19e9e;
+                    }
+
+
+    ul.useMenuBar li:hover > ul {
+        float: right;
+        display: inline-block;
+        right: 0px;
+        top: 32px;
+        border: 1px solid #6d0303;
+        border-top: 0px solid #AA0202;
+         border-bottom: 7px solid #6d0303;
+    }
+    ul.useMenuBar > li:hover {
+        color: #ffffff;
+    }
+.useMenuBar {
+}
+
+.menuWidth {
+    width:100%;
+}
+
+.backgroundContainer {
+    background-color: #A29CA7;
+    filter: alpha(opacity=80);
+    opacity: 0.80;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.messageBox {
+    width: 400px;
+    z-index: 1001;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 300px;
+    right: 0;
+}
+.messageBoxHeight {
+    padding: 10px 10px 10px 10px;
+    color:#000;
+}
+.add_edit_DeviceContainer {
+    width: 1100px;
+    height: 594px;
+    padding: 10px;
+}
+.add_edit_Device {
+    width: 1100px;
+    position: absolute;
+    top: 80px;
+    left: 560px;
+    z-index: 100;
+    overflow: hidden;
+}
+.addDeviceGrideView {
+    float: left;
+    clear: none;
+    height: 520px;
+    overflow: auto;
+    margin: 2px 17px 2px 2px;
+}
+.propertyWindow {
+    width: 500px;
+    position: absolute;
+    left: 650px;
+    top: 590px;
+    overflow: auto;
+}
+.propertyWindowHeigth {
+    padding: 0px;
+    width: auto;
+    height: 150px;
+}
+.propertyWindowContantDIV {
+    width: 100%;
+}
+.propertyNameLBL {
+    float:right;clear:none;margin-right:10px;
+}
+.bringToFront {
+    z-index: 500;
+}
+.moreOptions {
+    float: right;
+    clear: none;
+}
+.moreOptionDiv {
+    z-index: 500;
+    float: left;
+    clear: both;
+    width: 60px;
+    position: absolute;
+    top: 21px;
+    height: 92.5%;
+    background-color: #A87474;
+    /*border-bottom:1px solid #747474;*/
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #555657;
+    border-right: 1px solid #555657;
+}
+.moreOptionsToolBTN {
+    width: 25px;
+    height: 25px;
+}
+.AboutPhysicsExplorer {
+    width: 1200px;
+    height: 800px;
+    clear: none;
+    float: left;
+    margin-top: 0px;
+    background-color: #989898;
+}
+.loginDiv {
+    /*clear:none;
+float:left;*/
+    border: 2px solid #3B0303;
+    width: 400px;
+    height: auto;
+    margin-top: 70px;
+    text-align: center;
+    color: #4f4f4f;
+    /*padding: 10px;*/
+    background-color: #c26d6d;
+    /*right:20px;
+            position:absolute;*/
+}
+.profileSetting {
+    border: 1px solid black;
+    width: 500px;
+    /*height: 600px;*/
+    margin-top: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #5A5A5A;
+}
+.loginHeader {
+    font-size: 25px;
+font-weight: bolder;
+padding: 10px 0px 10px 0px;
+border-bottom: 4px solid #3B0303;
+background-color: #572A2A;
+color: #FFFFFF;
+}
+#loginHeaderLBL {
+   
+
+}
+.loginContantDiv {
+    padding: 10px;
+    margin: 30px 0px;
+    text-align: left;
+}
+.loginBTN {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+    height: auto;
+    font-size: 13px;
+}
+.loginSpan {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.loginTextBox {
+    width: 94%;
+    margin: 2px 0px;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    font-weight: bold;
+    color: #7A7A7A;
+}
+.linkBTNTheam {
+    text-decoration: none;
+    color: #3B3232;
+    font-weight: bold;
+    margin-top: 1000px;
+    font-size: 14px;
+}
+    .linkBTNTheam:hover {
+        color: #585050;
+    }
+.loginFooter {
+    background-color: #3B0303;
+    height: auto;
+    margin-top: 100px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 3px 0px;
+}
+.errorMSGLBL {
+    color: #6c0000;
+    font-weight: bold;
+}
+.adminLeftPanel {
+    /*width:170px;
+            text-align:center;
+            color:#eaeaea;
+            font-weight:bold;
+            margin-top:-4px;
+            border-top:2px solid #AA0202;
+            border-bottom:2px solid #6d0303;
+            position:absolute;*/
+    width: 200px;
+    text-align: left;
+    color: #eaeaea;
+    font-weight: bold;
+    margin-top: -3px;
+    border-top: 1px solid #AA0202;
+    border-bottom: 2px solid #6d0303;
+    height: 700px;
+    border-right: 2px solid #6d0303;
+    background-color: #555657;
+}
+.adminLinkRight {
+    text-decoration: none;
+    display: block;
+}
+.adminBTNRightPanel {
+    border: 0px solid black;
+    background-color: transparent;
+    color: #6d0303; /*#03B6B6;*/
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #767171;
+    width: 190px;
+    margin-left: -35px;
+    text-align: left;
+    outline:none;
+}
+    .adminBTNRightPanel:hover {
+        color: White; /*#89DFDF;*/
+        cursor: pointer;
+    }
+.defaultWidth {
+    width: 100%;
+    padding: 5px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+     
+}
+.defaultTextBoxWidth {
+    width: 55%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border:1px solid #5f5f5f;
+}
+.defaultTextBoxWidth1 {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border:1px solid #5f5f5f;
+}
+.createNewProjectTXT {
+    width: 96.4%;
+}
+.linkPopupBoxTXT {
+    width: 94%;
+}
+.createNewApp {
+    width: 350px;
+    position: absolute;
+    left: 200px;
+    top: 80px;
+}
+.createNewAppNew {
+    width: 515px;
+    position: absolute;
+    left: 200px;
+    top: 85px;
+}
+.createNewAppHeight {
+    height: 181px;
+    padding: 5px;
+}
+.confirmDeleteBoxHeight {
+    height: 130px;
+    padding: 5px;
+}
+.createNewProject {
+    width: 400px;
+    top: 70px;
+    position: absolute;
+    left: 200px;
+}
+.createNewProjectHeight {
+    /*height:130px;*/
+    padding: 5px;
+}
+.rowDeleteGridView {
+    background-color: transparent;
+    color: #ff0000;
+    font-weight: bold;
+    border: 0px solid black;
+    font-family: cursive;
+    text-decoration: none;
+    margin-top: 10px;
+    outline:none;
+}
+    .rowDeleteGridView:hover {
+         color: #830000;
+    }
+.NavStep {
+    color: #ffffff;
+   
+}
+.nextCss {
+    text-decoration: none;
+    color: #ffffff;
+    /*background-color: #a7a7a7;*/
+    padding: 10px;
+    float:left;
+    clear:none;
+    width:auto;
+    margin-top:12px;
+    font-weight:bolder;
+    margin-left:100px;
+    
+}
+    .nextCss:hover {
+        color: #a7a7a7;
+        /*background-color: #ffffff;*/
+    }
+.messageBoxClear  {
+    /*visibility:hidden;*/
+}
+.msgBoxConfirmDeleteComp {
+}
+.messageBoxAdmin {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1100;
+    border: 2px solid #ff0000;
+    width: 400px;
+    
+    /*background-color:#2d76a0;*/
+}
+
+.headerMSGBox {
+    background-color: #ff0000;
+}
+.toolBoxMSGBox {
+    /*background-color:#bdbfd9;*/
+}
+.dummy {
+    border-bottom: 1px groove #555657;
+}
+.footerGride {
+    border-bottom: 5px outset #555657;
+}
+
+.minMaxContainer {
+    color:#0063ff;
+}
+    .minMaxContainer.hover {
+        font-size:76px;
+    }
+
+.openFile {
+top: 42px;
+position: absolute;
+left: 230px;
+padding: 5px;
+border-top: 0px solid #6d0303;
+border-bottom: 7px solid #6d0303;
+border-left: 1px solid #6d0303;
+border-right: 1px solid #6d0303;
+background-color: #AA0202;
+border-radius: 0px;
+}
+.progressbar {
+    /*width: auto;
+    height: auto;
+    border: 1px thick #8d0000;
+    background-color: #8d0000;
+    position: absolute;*/
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10000;
+    width: 400px;
+    /*background-color:#2d76a0;*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #353535;
+    top: 0px;
+    text-align: center;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+    cursor:wait;
+}
+.createUsers {
+    width: 305px;
+    top: 100px;
+    position: absolute;
+    left: 200px;
+}
+.createUsersBody {
+    width: inherit;
+    padding: 10px;
+}
+.createUsersBodyControlls {
+    width: 90%;
+}
+.createUsersBodyControllsCombo {
+    width: 94.5%;
+}
+.headPanel {
+
+    /*color:#d8e8ef*/
+    width: auto;
+    /*border:1px solid #747474;*/
+    background-color: #6d0303; /*#b2b0b0;*/
+    /*height:25px;*/
+    position: absolute;
+    top: 52px;
+    left: 200px;
+    padding: 10px;
+}
+.headPanelBTN {
+    border: 0px solid #000;
+    background-color: transparent;
+    color: #AA0202;
+    font-weight: bold;
+    cursor: pointer;
+    outline:none;
+}
+    .headPanelBTN:hover {
+        color: black;
+    }
+/*2px solid #6d0303*/
+.steps {
+    height: 95px;
+    margin-left: 4px;
+    width: 190px;
+}
+.forgetPasswordContainer {
+      border: 2px solid #3C3A3A;
+    width: 500px;
+    /*filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=1200, Strength=5);
+   -moz-box-shadow: 0 0 2px 2px #888;
+    -webkit-box-shadow: 0 0 2px 2px #888;
+    box-shadow: 0 0 2px 2px #888;*/
+    margin: auto;
+    top: auto;
+    left: 0;
+    right: 0;
+    height: 270px;
+    position: absolute;
+    background-color: #e1e1e1;
+    margin-top: 100px;
+
+}
+.forgetPasswordContainerHeight {
+    height: 180px;
+}
+.lable {
+    padding: 10px;
+    color: #ccc;
+    font-weight: bold;
+    float: left;
+}
+.textBox {
+    border: 1px solid #555657;
+    padding: 3px 10px;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #454444;
+}
+.comboBox {
+    border: 1px solid #555657;
+    padding: 3px 7px;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #454444;
+}
+.profileSettingUpdate {
+    margin-top: 10px;
+    padding: 0px;
+    text-align: left;
+}
+.LinkPopupBox {
+    width: 250px;
+    position: absolute;
+    left: 950px;
+    top: 80px;
+    z-index: 1000;
+}
+.LinkPopupBoxHeight {
+    height: 180px;
+    padding: 5px;
+}
+.getInputForNoOfChildDeviceHeight {  
+    height: auto;
+    padding: 5px;
+}
+.ComponentContaxtMenu {
+    width: 150px;
+    position: absolute;
+    padding: 5px;
+    background-color: #aeaeae;
+    top: 100px;
+    left: 300px;
+    z-index: 500;
+    border: 1px solid #969090;
+}
+.ComponentContaxtMenuBTN {
+    background-color: transparent;
+    border: 0px solid black;
+    width: 100%;
+    color: #424242;
+    text-align: left;
+}
+    .ComponentContaxtMenuBTN:hover {
+        background-color: #939393;
+        color: #222222;
+        /* border:1px solid #757272;
+       font-weight:bold;*/
+    }
+.imgSelectClass {
+    cursor: pointer;
+}
+    .imgSelectClass:hover {
+        background-color:#e0dada;
+    }
+.cancelOperationPanel {
+    position: absolute;
+    right: 0px;
+    background-color: #6d0303;
+    /*filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0.85,startColorstr='#fff', endColorstr='#fff');*/ /* IE */
+   /* height: 50px;
+    width: 250px;*/
+    flex-item-align: center;
+    padding:15px 30px;
+    z-index:1100;
+}
+.cancelEditMappOp {
+    border: 0px solid #333333;
+    margin: 3px 0px 3px 3px;
+    cursor: pointer;
+    color: #4C4D4D;
+    float: left;
+    clear: none;
+    outline: none;
+    padding: 5px 7px;
+    font-size: 14px;
+    height: auto;
+    font-weight: lighter;
+    margin-left: -5px;
+    z-index: 3;
+    background-color: #333333;
+    color: #6d0303;
+}
+.cancelEditMappImgOp {
+    margin-top: -7px;
+    float: left;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+}
+.regularExpErrorMsg {
+    margin-top: -5px;
+    color: #d56363;
+}
+.draggDivElement {
+    color:#690303;
+    background-color:rgba(239, 216, 216, 0.95);
+    padding:5px;
+    font-weight:bold;
+    cursor:move;
+    border:1px solid #d4b8b8;
+}
+.col-13 {
+    width:850px;
+    margin-left:auto;margin-right:auto;
+    border:1px solid #717171;
+    background-color:#868585;
+    padding:30px 20px;
+
+    /*background-image:;*/
+
+    color:#171717;
+}
+
+.parameterizedSymbol {
+    position: absolute;
+    right: 10px;
+    top: -32px;
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.mapSymbol {
+    position: absolute;
+    right: -1px;
+    top: -32px;
+    padding: 2px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
